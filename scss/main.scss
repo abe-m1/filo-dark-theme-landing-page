@@ -142,6 +142,10 @@ body {
   justify-items: center;
   margin: auto;
   margin-bottom: 10rem;
+
+  @include respond(phone) {
+    display: block;
+  }
 }
 
 .box {
@@ -161,6 +165,10 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 10rem;
+
+  @include respond(phone) {
+    display: block;
+  }
 }
 
 .left {
@@ -175,6 +183,10 @@ body {
   display: flex;
   justify-content: center;
   margin-bottom: 15rem;
+
+  @include respond(phone) {
+    display: block;
+  }
 }
 .testimonial-box {
   width: 30%;
@@ -183,6 +195,10 @@ body {
 
   &:not(:last-child) {
     margin-right: 2rem;
+  }
+
+  @include respond(phone) {
+    width: 90%;
   }
 }
 
@@ -222,19 +238,34 @@ body {
   height: 4.5rem;
   border-radius: 100px;
   border: none;
+
+  @include respond(phone) {
+    width: 80%;
+  }
 }
 
 .footer {
   background-color: $footerDarkBlue;
   padding-top: 12rem;
+  padding-bottom: 7rem;
 }
 
 .icon {
   width: 2rem;
+  margin-right: 1rem;
 }
 
 .footer-content {
   display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+  @include respond(phone) {
+    display: block;
+  }
 }
 
 .footer-text {
@@ -243,17 +274,31 @@ body {
 
 .footer-contact {
   flex: 2;
+  list-style: none;
 }
 
 .footer-info {
   flex: 1;
+  list-style: none;
 }
 .footer-general {
   flex: 1;
+  list-style: none;
 }
 .footer-social {
   flex: 2;
 }
+
+ion-icon {
+  font-size: 45px;
+  color: #fff;
+  margin-left: 1.5rem;
+
+  &:not(:last-of-type) {
+    margin-left: 1.5rem;
+  }
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;

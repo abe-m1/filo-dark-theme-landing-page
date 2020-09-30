@@ -91,6 +91,9 @@ body {
   justify-items: center;
   margin: auto;
   margin-bottom: 10rem; }
+  @media (max-width: 600px) {
+    .boxes {
+      display: block; } }
 
 .box {
   width: 70%;
@@ -107,6 +110,9 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 10rem; }
+  @media (max-width: 600px) {
+    .split-panel {
+      display: block; } }
 
 .left {
   flex: 1; }
@@ -118,6 +124,9 @@ body {
   display: flex;
   justify-content: center;
   margin-bottom: 15rem; }
+  @media (max-width: 600px) {
+    .row {
+      display: block; } }
 
 .testimonial-box {
   width: 30%;
@@ -125,6 +134,9 @@ body {
   padding: 3rem 2rem; }
   .testimonial-box:not(:last-child) {
     margin-right: 2rem; }
+  @media (max-width: 600px) {
+    .testimonial-box {
+      width: 90%; } }
 
 .testimonial-text {
   margin-bottom: 2rem; }
@@ -158,31 +170,54 @@ body {
   height: 4.5rem;
   border-radius: 100px;
   border: none; }
+  @media (max-width: 600px) {
+    .action-input {
+      width: 80%; } }
 
 .footer {
   background-color: #0b1523;
-  padding-top: 12rem; }
+  padding-top: 12rem;
+  padding-bottom: 7rem; }
 
 .icon {
-  width: 2rem; }
+  width: 2rem;
+  margin-right: 1rem; }
 
 .footer-content {
-  display: flex; }
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem; }
+  @media (max-width: 600px) {
+    .footer-content {
+      display: block; } }
 
 .footer-text {
   flex: 2; }
 
 .footer-contact {
-  flex: 2; }
+  flex: 2;
+  list-style: none; }
 
 .footer-info {
-  flex: 1; }
+  flex: 1;
+  list-style: none; }
 
 .footer-general {
-  flex: 1; }
+  flex: 1;
+  list-style: none; }
 
 .footer-social {
   flex: 2; }
+
+ion-icon {
+  font-size: 45px;
+  color: #fff;
+  margin-left: 1.5rem; }
+  ion-icon:not(:last-of-type) {
+    margin-left: 1.5rem; }
 
 .attribution {
   font-size: 11px;
