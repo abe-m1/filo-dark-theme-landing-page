@@ -25,6 +25,30 @@ $accentCyan: hsl(176, 68%, 64%);
 $accentBlue: hsl(198, 60%, 50%);
 $white: hsl(0, 0%, 100%);
 
+//mixins
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+  @if $breakpoint == big-desktop {
+    @media (min-width: 1800px) {
+      @content;
+    }
+  }
+}
+
 body {
   font-family: 'Raleway', sans-serif;
 }
