@@ -40,6 +40,9 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 4rem; }
+  @media (max-width: 600px) {
+    .header {
+      height: 6rem; } }
 
 .header-menu {
   display: flex; }
@@ -48,6 +51,9 @@ body {
   list-style: none; }
   .menu-item:not(:last-child) {
     margin-right: 3rem; }
+  @media (max-width: 600px) {
+    .menu-item:not(:last-child) {
+      margin-right: 1rem; } }
 
 .content-container {
   width: 90%;
@@ -55,6 +61,9 @@ body {
 
 .logo {
   width: 16rem; }
+  @media (max-width: 600px) {
+    .logo {
+      width: 11rem; } }
 
 .hero-container {
   display: flex;
@@ -62,10 +71,16 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 15rem; }
+  @media (max-width: 600px) {
+    .hero-container {
+      margin-bottom: 14rem; } }
 
 .intro-image {
   width: 55%;
   margin-bottom: 4rem; }
+  @media (max-width: 600px) {
+    .intro-image {
+      width: 75%; } }
 
 .intro-title {
   width: 60%;
@@ -73,6 +88,12 @@ body {
   font-size: 4rem;
   line-height: 1.6;
   margin-bottom: 2.5rem; }
+  @media (max-width: 600px) {
+    .intro-title {
+      width: 100%;
+      font-size: 3.1rem;
+      line-height: 1.4;
+      font-weight: 700; } }
 
 .intro-text {
   width: 50%;
@@ -81,6 +102,11 @@ body {
   font-size: 2.1rem;
   line-height: 1.4;
   font-family: 'Open Sans', sans-serif; }
+  @media (max-width: 600px) {
+    .intro-text {
+      width: 90%;
+      font-size: 1.7rem;
+      margin-bottom: 3rem; } }
 
 .intro-button {
   padding: 2rem 9rem;
@@ -91,7 +117,7 @@ body {
   color: white; }
 
 .boxes {
-  width: 70%;
+  width: 90%;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
@@ -101,18 +127,26 @@ body {
   row-gap: 10rem; }
   @media (max-width: 600px) {
     .boxes {
-      display: block; } }
+      display: block;
+      margin-bottom: 22rem; } }
 
 .box {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  @media (max-width: 600px) {
+    .box {
+      margin-bottom: 11rem; } }
 
 .box-icon {
   width: 28%;
   margin-bottom: 2rem; }
+  @media (max-width: 600px) {
+    .box-icon {
+      width: 18%;
+      margin-bottom: 3rem; } }
 
 .box-title {
   margin-bottom: 1.5rem; }
@@ -131,19 +165,38 @@ body {
 
 .left {
   flex: 1; }
+  @media (max-width: 600px) {
+    .left {
+      flex: none;
+      width: 85%;
+      margin: auto; } }
 
 .right {
   flex: 1; }
+  @media (max-width: 600px) {
+    .right {
+      flex: none; } }
+
+@media (max-width: 600px) {
+  .stay-productive {
+    margin-bottom: 3.8rem; } }
 
 .productive-title {
   font-size: 4.2rem;
   width: 60%;
   margin-bottom: 2rem; }
+  @media (max-width: 600px) {
+    .productive-title {
+      width: 100%;
+      font-size: 2.4rem; } }
 
 .productive-text {
   font-size: 1.8rem;
   width: 90%;
   margin-bottom: 2rem; }
+  @media (max-width: 600px) {
+    .productive-text {
+      width: 100%; } }
 
 .see-how {
   color: #339ecc;
@@ -162,7 +215,9 @@ body {
   padding-top: 4rem; }
   @media (max-width: 600px) {
     .row {
-      display: block; } }
+      display: block;
+      background-size: 30px 20px;
+      margin-bottom: 9rem; } }
 
 .testimonial-box {
   width: 30%;
@@ -173,24 +228,42 @@ body {
     margin-right: 4rem; }
   @media (max-width: 600px) {
     .testimonial-box {
-      width: 90%; } }
+      width: 80%;
+      margin: auto;
+      margin-bottom: 3rem;
+      padding: 3rem 1.5rem 2rem 1.5rem; } }
 
 .testimonial-text {
-  font-size: 1.7;
+  font-size: 1.7rem;
   margin-bottom: 2rem; }
+  @media (max-width: 600px) {
+    .testimonial-text {
+      font-size: 1.3rem;
+      font-weight: 100;
+      line-height: 1.7; } }
 
 .profile-image {
   width: 2.8rem;
   height: 2.8rem;
   border-radius: 100px;
   margin-right: 2rem; }
+  @media (max-width: 600px) {
+    .profile-image {
+      width: 2.4rem;
+      height: 2.4rem; } }
 
 .profile-name {
   font-weight: 600;
   font-size: 1.4rem; }
+  @media (max-width: 600px) {
+    .profile-name {
+      font-size: 1.2rem; } }
 
 .profile-title {
   font-size: 1.2rem; }
+  @media (max-width: 600px) {
+    .profile-title {
+      font-size: 1rem; } }
 
 .user-info {
   display: flex;
@@ -204,10 +277,16 @@ body {
   text-align: center;
   position: relative;
   bottom: -10rem; }
+  @media (max-width: 600px) {
+    .info-container {
+      width: 90%; } }
 
 .action-heading {
   font-size: 3.2rem;
   margin-bottom: 2.4rem; }
+  @media (max-width: 600px) {
+    .action-heading {
+      font-size: 2.4rem; } }
 
 .action-text {
   margin-bottom: 3.4rem;
@@ -222,7 +301,8 @@ body {
   border: none; }
   @media (max-width: 600px) {
     .action-input {
-      width: 80%; } }
+      width: 100%;
+      margin-bottom: 2rem; } }
 
 .action-button {
   padding: 1.5rem 4rem;
@@ -231,6 +311,9 @@ body {
   font-size: 1.5rem;
   background-color: #339ecc;
   color: white; }
+  @media (max-width: 600px) {
+    .action-button {
+      width: 100%; } }
 
 .footer {
   background-color: #0b1523;
@@ -247,6 +330,9 @@ body {
 
 .footer-logo {
   margin-bottom: 3rem; }
+  @media (max-width: 600px) {
+    .footer-logo {
+      width: 20rem; } }
 
 .footer-container {
   width: 85%;
@@ -263,6 +349,10 @@ body {
   flex: 2;
   font-family: 'Open Sans', sans-serif;
   margin-right: 3rem; }
+  @media (max-width: 600px) {
+    .footer-text {
+      margin-bottom: 3rem;
+      font-size: 1.9rem; } }
 
 .footer-contact {
   flex: 2;
@@ -278,11 +368,22 @@ body {
 
 .footer-social {
   flex: 1; }
+  @media (max-width: 600px) {
+    .footer-social {
+      flex: none;
+      text-align: center; } }
+
+@media (max-width: 600px) {
+  ul {
+    margin-bottom: 7rem; } }
 
 li {
   margin-bottom: 1rem;
   font-size: 1.9rem;
   font-weight: 600; }
+  @media (max-width: 600px) {
+    li {
+      margin-bottom: 2rem; } }
 
 ion-icon {
   font-size: 35px;
@@ -290,10 +391,16 @@ ion-icon {
   margin-left: 1.5rem; }
   ion-icon:not(:last-of-type) {
     margin-left: 1.5rem; }
+  @media (max-width: 600px) {
+    ion-icon {
+      font-size: 25px; } }
 
 .attribution {
   font-size: 11px;
   text-align: center; }
+  @media (max-width: 600px) {
+    .attribution {
+      display: none; } }
 
 .attribution a {
   color: #3e52a3; }
